@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "Scrolltide",
+    "url": "https://scrolltide.co",
+    "category": "Core Components",
+    "zh": "終極氛圍編程寶庫，600+ 3D、動畫、波動敘事網頁模板",
+    "en": "Ultimate vibe coding vault with 600+ 3D, animation, storytelling templates"
+  },
+  {
+    "id": 2,
+    "name": "Aceternity UI",
+    "url": "https://ui.aceternity.com",
+    "category": "Core Components",
+    "zh": "200+ 超炫動畫 React/Tailwind 元件，專做 Hero 區",
+    "en": "200+ crazy animated React/Tailwind components for showcase hero sections"
+  },
+  {
+    "id": 3,
+    "name": "Magic UI",
+    "url": "https://magicui.design",
+    "category": "Core Components",
+    "zh": "高轉換率行銷網站動畫 React 元件",
+    "en": "Ready-to-insert animated React components for high-conversion marketing sites"
+  },
+  {
+    "id": 4,
+    "name": "Motion Primitives",
+    "url": "https://motion-primitives.com",
+    "category": "Core Components",
+    "zh": "可重用進階 UI 互動 React 元件",
+    "en": "Reusable React components for advanced UI interactions"
+  },
+  {
+    "id": 5,
+    "name": "OpenMotion",
+    "url": "https://openmotion.design",
+    "category": "Animation & Effects",
+    "zh": "用 AI 建立產品演示與動畫",
+    "en": "Build and edit product demos & animations using AI"
+  },
+  {
+    "id": 6,
+    "name": "Kinetics",
+    "url": "https://kinetics.colorion.co",
+    "category": "Animation & Effects",
+    "zh": "150+ 動畫效果，附 React 程式碼與提示",
+    "en": "150+ animation effects with React code and ready prompts"
+  },
+  {
+    "id": 7,
+    "name": "21st.dev",
+    "url": "https://21st.dev",
+    "category": "Vibe Coding AI",
+    "zh": "氛圍編碼 NPM 套件與 MCP 元件登錄庫",
+    "en": "Vibe coding NPM packages, huge component registry via MCP"
+  },
+  {
+    "id": 8,
+    "name": "DESIGNmd",
+    "url": "https://designmd.ai",
+    "category": "Vibe Coding AI",
+    "zh": "數百個設計系統轉成 Markdown 供 AI 讀取",
+    "en": "Hundreds of design systems converted to markdown for AI agent"
+  },
+  {
+    "id": 9,
+    "name": "VibePrompt",
+    "url": "https://vibeprompts.dev",
+    "category": "Vibe Coding AI",
+    "zh": "儀表板、登陸頁、複雜 UI 的視覺提示",
+    "en": "Ready visual prompts for dashboard, landing, complex UI"
+  },
+  {
+    "id": 10,
+    "name": "Refero Styles",
+    "url": "https://styles.refero.design",
+    "category": "Vibe Coding AI",
+    "zh": "2000+ 真實產品樣式與排版",
+    "en": "2000+ real product styles with layout"
+  },
+  {
+    "id": 11,
+    "name": "Kage",
+    "url": "https://kage.design",
+    "category": "Vibe Coding AI",
+    "zh": "真實 UI 靈感直接對應到 Prompt",
+    "en": "Real UI inspiration directly mapped to prompts"
+  },
+  {
+    "id": 12,
+    "name": "shadcn/ui",
+    "url": "https://ui.shadcn.com",
+    "category": "Core Components",
+    "zh": "黃金標準，複製貼上的 React/Tailwind 框架",
+    "en": "Gold standard copy-paste React/Tailwind framework"
+  },
+  {
+    "id": 13,
+    "name": "Uiverse",
+    "url": "https://uiverse.io",
+    "category": "Core Components",
+    "zh": "數千開源 UI 元素，支援 HTML/CSS/Tailwind/React",
+    "en": "Thousands open source UI elements"
+  },
+  {
+    "id": 14,
+    "name": "UIAble",
+    "url": "https://uiable.com",
+    "category": "Core Components",
+    "zh": "擴展 shadcn 生態的開源 React 庫",
+    "en": "Open source React library extending shadcn ecosystem"
+  },
+  {
+    "id": 15,
+    "name": "mapcn",
+    "url": "https://mapcn.dev",
+    "category": "Core Components",
+    "zh": "React 地圖元件，標記、路線、彈窗",
+    "en": "Copy-paste map components for React"
+  },
+  {
+    "id": 16,
+    "name": "Component Gallery",
+    "url": "https://component.gallery",
+    "category": "Inspiration Galleries",
+    "zh": "2600+ 範例，看頂尖設計系統如何處理同一元件",
+    "en": "2600+ examples showing how top design systems handle same element"
+  },
+  {
+    "id": 17,
+    "name": "Minimal Gallery",
+    "url": "https://minimal.gallery",
+    "category": "Inspiration Galleries",
+    "zh": "精選高端現代網站，給編碼代理靈感",
+    "en": "Curated high-end modern websites for inspiration"
+  },
+  {
+    "id": 18,
+    "name": "AppShot Gallery",
+    "url": "https://appshot.gallery",
+    "category": "Inspiration Galleries",
+    "zh": "真實 App 截圖，行動 UI 靈感",
+    "en": "Real app screenshots for mobile UI inspiration"
+  },
+  {
+    "id": 19,
+    "name": "Navbar Gallery",
+    "url": "https://navbar.gallery",
+    "category": "Inspiration Galleries",
+    "zh": "數百個高端導航列範例",
+    "en": "Hundreds of high-end navbars"
+  },
+  {
+    "id": 20,
+    "name": "Footer Design",
+    "url": "https://footer.design",
+    "category": "Inspiration Galleries",
+    "zh": "專做漂亮 Footer 的圖庫",
+    "en": "Gallery dedicated to well-built footers"
+  },
+  {
+    "id": 21,
+    "name": "CTA Gallery",
+    "url": "https://cta.gallery",
+    "category": "Inspiration Galleries",
+    "zh": "轉換率最佳化的表單、彈窗、按鈕",
+    "en": "Conversion optimized forms, popups, buttons"
+  },
+  {
+    "id": 22,
+    "name": "404s",
+    "url": "https://404s.design",
+    "category": "Inspiration Galleries",
+    "zh": "創意 404 頁面合集",
+    "en": "Creative 404 pages collection"
+  },
+  {
+    "id": 23,
+    "name": "Liquid Glass",
+    "url": "https://glass.samasante.com",
+    "category": "Animation & Effects",
+    "zh": "動態玻璃折射效果 React 元件",
+    "en": "Dynamic glass refraction effects React components"
+  },
+  {
+    "id": 24,
+    "name": "MicroKit UI",
+    "url": "https://microkit.co",
+    "category": "Animation & Effects",
+    "zh": "按鈕與輸入框的頂級微互動",
+    "en": "Top micro-interactions for buttons and inputs"
+  },
+  {
+    "id": 25,
+    "name": "CSS Text Effects",
+    "url": "https://text-effects.colorion.co",
+    "category": "Animation & Effects",
+    "zh": "可直接複製的動畫文字特效",
+    "en": "Copyable animated text effects"
+  },
+  {
+    "id": 26,
+    "name": "Circle Loaders",
+    "url": "https://circleloaders.dominikakiss.com",
+    "category": "Animation & Effects",
+    "zh": "24 個現代 SVG 圓形載入器",
+    "en": "24 modern SVG circular loaders"
+  },
+  {
+    "id": 27,
+    "name": "Gradient Buttons",
+    "url": "https://gradientbuttons.colorion.co",
+    "category": "Animation & Effects",
+    "zh": "一鍵複製的 CSS 漸層按鈕",
+    "en": "One-click copyable CSS gradient buttons"
+  },
+  {
+    "id": 28,
+    "name": "Kitbitz",
+    "url": "https://kitbitz.art",
+    "category": "Illustrations & 3D",
+    "zh": "2000+ 免費手繪插圖",
+    "en": "2000+ free hand-drawn illustrations"
+  },
+  {
+    "id": 29,
+    "name": "3Dicons",
+    "url": "https://3dicons.co",
+    "category": "Illustrations & 3D",
+    "zh": "開源 3D 圖示，適合空間 UI",
+    "en": "Open source 3D icons for spatial UI"
+  },
+  {
+    "id": 30,
+    "name": "Anime.js",
+    "url": "https://animejs.com",
+    "category": "Animation & Effects",
+    "zh": "輕量級 JS 函式庫，處理複雜 DOM 動畫",
+    "en": "Lightweight JS library for complex DOM animation"
+  }
+]
