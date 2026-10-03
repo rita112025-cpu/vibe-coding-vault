@@ -3,7 +3,7 @@
 > 30 free open-source dev & design resources with bilingual support, ready for GitHub Pages.
 
 ## Features
-- Notion-style UI
+- Ink-wash paper UI with light/dark theme toggle
 - Search + Category filter
 - Bilingual toggle (ZH/EN)
 - 30 clickable resources

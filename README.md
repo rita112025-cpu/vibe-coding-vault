@@ -6,12 +6,13 @@
 ![Resources: 30](https://img.shields.io/badge/Resources-30-blue)
 ![Free: 100%](https://img.shields.io/badge/Free-100%25-green)
 
-這個專案源自一張爆紅的資源清單截圖，我把它整理成 **可搜尋、可點擊、中英對照** 的 Notion 風格儀表板，並打包成可直接上傳到 GitHub 的結構。
+這個專案源自一張爆紅的資源清單截圖，我把它整理成 **可搜尋、可點擊、中英對照** 的宣紙水墨風格頁面，並打包成可直接上傳到 GitHub 的結構。
 
 **線上預覽:** 啟用 GitHub Pages 後，`index.html` 就是你的網站。
 
 ## ✨ 特色
-- Notion 風格 UI，乾淨極簡
+- 宣紙水墨風格 UI（左側直排卷軸導覽、朱紅進度線、章節式排版）
+- 亮色 / 暗色切換（記住偏好，預設跟隨系統）
 - 5 大分類 + 即時搜尋
 - 中文 / 中英對照切換
 - 全部 30 個資源皆可點擊，`target="_blank"`
@@ -20,7 +21,7 @@
 ## 📂 專案結構
 ```
 .
-├── index.html          # Notion 風格互動儀表板 (GitHub Pages 入口)
+├── index.html          # 宣紙水墨風互動頁面（資料內嵌自 data/resources.json） (GitHub Pages 入口)
 ├── data/
 │   └── resources.json  # 30 筆資源的結構化資料
 ├── README.md           # 中文說明 (本檔)
