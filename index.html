@@ -11,14 +11,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f1e9d8;--bg2:#eae0ca;--ink:#2a2620;--muted:#6f665a;--faint:#a89d8a;
+  --bg:#f1e9d8;--bg2:#eae0ca;--ink:#2a2620;--muted:#585044;--faint:#a89d8a;
   --line:rgba(60,48,30,.18);--red:#b23a2b;--green:#62785f;--mist:#f1e9d8;--grain:.5;
   --serif:"Noto Serif TC","Songti TC","Source Han Serif TC","PMingLiU",serif;
   --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
   --rail:120px;color-scheme:light;
 }
 :root[data-journal-theme="dim"]{
-  --bg:#17150f;--bg2:#1e1b14;--ink:#e9e0cd;--muted:#9a9080;--faint:#6a6254;
+  --bg:#17150f;--bg2:#1e1b14;--ink:#e9e0cd;--muted:#b4aa96;--faint:#6a6254;
   --line:rgba(233,224,205,.14);--red:#e0674f;--green:#94aa8e;--mist:#17150f;--grain:.25;
   color-scheme:dark;
 }
@@ -62,7 +62,7 @@ h1,h2{font-weight:400;letter-spacing:.2em;line-height:1.25}
 .lede{color:var(--muted);font-size:15px;letter-spacing:.06em}
 
 /* 入卷 */
-.hero{min-height:100vh;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}
+.hero{min-height:82vh;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}
 .hero-l{padding:min(14vh,120px) 64px 56px;display:flex;flex-direction:column;position:relative;overflow:hidden}
 .hero h1{font-size:clamp(46px,6.2vw,96px);margin-top:26px}
 .ghost{position:absolute;right:-.12em;bottom:-.28em;font-size:min(34vw,440px);line-height:1;color:var(--ink);opacity:.045;pointer-events:none;user-select:none}
@@ -83,7 +83,7 @@ h1,h2{font-weight:400;letter-spacing:.2em;line-height:1.25}
 /* 水墨畫 */
 .paint{position:absolute;inset:0;overflow:hidden}
 .paint svg{width:100%;height:100%;display:block}
-.frame{position:relative;aspect-ratio:3/4;overflow:hidden;margin-top:34px;max-width:420px;border:1px solid var(--line)}
+.frame{position:relative;aspect-ratio:25/18;overflow:hidden;margin-top:34px;max-width:420px;border:1px solid var(--line)}
 
 /* 章節 */
 .chapter{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.5fr)}
@@ -92,7 +92,7 @@ h1,h2{font-weight:400;letter-spacing:.2em;line-height:1.25}
 .ch-l h2{font-size:clamp(34px,4vw,60px);margin-top:20px}
 .ch-en{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--faint);text-transform:uppercase;margin-top:10px}
 .ch-r{display:flex;flex-direction:column}
-.row{display:grid;grid-template-columns:150px minmax(0,1fr);gap:0 40px;padding:44px 56px;border-bottom:1px solid var(--line);transition:background .4s,opacity .9s,transform .9s}
+.row{display:grid;grid-template-columns:150px minmax(0,1fr);gap:0 40px;padding:35px 56px;border-bottom:1px solid var(--line);transition:background .4s,opacity .9s,transform .9s}
 .row:last-child{border-bottom:0}
 .row:hover{background:var(--bg2)}
 .meta{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
@@ -104,8 +104,8 @@ h1,h2{font-weight:400;letter-spacing:.2em;line-height:1.25}
 .row h3{font-weight:400;font-size:26px;letter-spacing:.14em;line-height:1.3}
 .row p{color:var(--muted);font-size:14.5px;letter-spacing:.04em;margin-top:10px;max-width:60ch}
 .row p.en{font-size:13px;letter-spacing:.01em;font-family:Georgia,"Times New Roman",serif;font-style:italic}
-.shot{display:block;position:relative;aspect-ratio:1200/630;max-width:440px;margin-top:20px;overflow:hidden;border:1px solid var(--line);background:var(--bg2)}
-.shot img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.7) sepia(.14);transition:filter .6s,transform .8s}
+.shot{display:block;position:relative;aspect-ratio:16/7;width:100%;max-width:440px;margin-top:16px;overflow:hidden;border:1px solid var(--line);background:var(--bg2)}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;filter:saturate(.7) sepia(.14);transition:filter .6s,transform .8s}
 :root[data-journal-theme="dim"] .shot img{filter:saturate(.7) sepia(.1) brightness(.85)}
 .shot:hover img{filter:none;transform:scale(1.03)}
 .shot .nm{position:absolute;left:12px;bottom:8px;font-size:12px;letter-spacing:.2em;color:var(--muted)}
@@ -161,7 +161,8 @@ body[data-lang="both"] .more .en{display:none}
   .ch-l{padding:48px 24px 8px;border-right:0}
   .ch-l .sticky{position:static}
   .frame{aspect-ratio:16/9;max-width:none}
-  .row{grid-template-columns:1fr;padding:30px 24px;gap:14px}
+  .row{grid-template-columns:1fr;padding:26px 24px;gap:12px}
+  .shot{max-width:none}
   .meta{flex-direction:row;align-items:center;gap:14px;flex-wrap:wrap}
   .badge{width:34px;height:34px;font-size:14px}
   .c1,.c2{top:16px}.c3,.c4{bottom:16px}.c1,.c3{left:16px}.c2,.c4{right:16px}
@@ -255,6 +256,11 @@ function paint(host,seed,W,H){
    '<rect width="'+W+'" height="'+H+'" fill="url(#'+id+'s)"/>'+
    '<circle cx="'+(W*(.2+r()*.6))+'" cy="'+(H*(.14+r()*.1))+'" r="'+(W*.035)+'" fill="var(--red)" opacity=".8"/>'+g+'</svg>'}
 
+/* 預覽圖失敗或缺圖時的水墨占位 */
+function fallback(shot,d){
+  shot.textContent="";shot.classList.add("image-failed");
+  var pp=el("div","paint");shot.appendChild(pp);paint(pp,d.id+20,400,175);shot.appendChild(el("span","nm",d.name))}
+
 /* 組頁 */
 var nav=$("#nav"),host=$("#chapters"),chips=$("#chips");
 function navItem(id,name,no){var a=el("a");a.href="#"+id;a.dataset.t=id;a.appendChild(el("b",null,name));a.appendChild(el("em",null,no));nav.appendChild(a)}
@@ -287,8 +293,9 @@ CH.forEach(function(c,i){
     a.href=d.url;a.target="_blank";a.rel="noopener noreferrer";h.appendChild(a);
     bd.appendChild(h);bd.appendChild(el("p","zh",d.zh));bd.appendChild(el("p","en",d.en));
     var shot=el("a","shot");shot.href=d.url;shot.target="_blank";shot.rel="noopener noreferrer";shot.tabIndex=-1;
-    if(d.image){var im=el("img");im.src=d.image;im.alt=d.name+" 預覽";im.loading="lazy";im.width=800;im.height=420;shot.appendChild(im)}
-    else{var pp=el("div","paint");shot.appendChild(pp);paint(pp,d.id+20,400,210);shot.appendChild(el("span","nm",d.name))}
+    if(d.image){var im=el("img");im.alt=d.name+" 預覽";im.loading="lazy";im.width=800;im.height=350;
+      im.onerror=(function(sh,dd){return function(){fallback(sh,dd)}})(shot,d);im.src=d.image;shot.appendChild(im)}
+    else fallback(shot,d);
     bd.appendChild(shot);
     var more=el("a","more");more.href=d.url;more.target="_blank";more.rel="noopener noreferrer";
     more.setAttribute("aria-label","前往訪問 "+d.name);
