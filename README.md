@@ -145,7 +145,7 @@ python build.py
 
 ## 關於預覽圖
 
-預覽圖為各網站公開的社群分享圖（Open Graph image），版權屬於各站原作者，此處僅作為資源的預覽用途。其中 Motion Primitives 與 Circle Loaders 目前抓不到可用的分享圖（前者設定錯誤、後者網域已無法解析），因此使用占位圖。如有任何疑慮，歡迎開 issue，會立即移除。
+預覽圖為各網站公開的社群分享圖（Open Graph image），版權屬於各站原作者，此處僅作為資源的預覽用途。其中 Motion Primitives 的分享圖設定錯誤（指向 localhost），改用本機瀏覽器截取首頁；Circle Loaders 的網域已無法解析，因此使用占位圖。如有任何疑慮，歡迎開 issue，會立即移除。
 
 ## 授權
 

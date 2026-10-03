@@ -145,7 +145,7 @@ Finishing touches: illustrations, icons and 3D assets.
 
 ## About the preview images
 
-Previews are each site's public social-share (Open Graph) image; copyright belongs to the respective authors and they are shown here only as previews. Motion Primitives and Circle Loaders currently expose no usable image (a misconfigured URL and a domain that no longer resolves), so they use a placeholder. If you have any concern, open an issue and it will be removed right away.
+Previews are each site's public social-share (Open Graph) image; copyright belongs to the respective authors and they are shown here only as previews. Motion Primitives publishes a broken share image (it points to localhost), so its preview is a screenshot of the homepage; Circle Loaders no longer resolves, so it uses a placeholder. If you have any concern, open an issue and it will be removed right away.
 
 ## License
 
