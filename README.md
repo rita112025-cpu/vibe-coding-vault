@@ -104,7 +104,7 @@ python build.py
 | 23 | [Liquid Glass](https://glass.samasante.com) | 動態玻璃折射效果 React 元件 |
 | 24 | [MicroKit UI](https://microkit.co) | 按鈕與輸入框的頂級微互動 |
 | 25 | [CSS Text Effects](https://text-effects.colorion.co) | 可直接複製的動畫文字特效 |
-| 26 | [Circle Loaders](https://circleloaders.dominikakiss.com) | 24 個現代 SVG 圓形載入器 |
+| 26 | [Circle Loaders](https://circleloaders.dominikakissi.com) | 24 個現代 SVG 圓形載入器 |
 | 27 | [Gradient Buttons](https://gradientbuttons.colorion.co) | 一鍵複製的 CSS 漸層按鈕 |
 | 30 | [Anime.js](https://animejs.com) | 輕量級 JS 函式庫，處理複雜 DOM 動畫 |
 
@@ -145,7 +145,7 @@ python build.py
 
 ## 關於預覽圖
 
-預覽圖為各網站公開的社群分享圖（Open Graph image），版權屬於各站原作者，此處僅作為資源的預覽用途。其中 Motion Primitives 的分享圖設定錯誤（指向 localhost），改用本機瀏覽器截取首頁；Circle Loaders 的網域已無法解析，因此使用占位圖。如有任何疑慮，歡迎開 issue，會立即移除。
+預覽圖為各網站公開的社群分享圖（Open Graph image），版權屬於各站原作者，此處僅作為資源的預覽用途。其中 Motion Primitives 的分享圖設定錯誤（指向 localhost），改用本機瀏覽器截取首頁。如有任何疑慮，歡迎開 issue，會立即移除。
 
 ## 授權
 

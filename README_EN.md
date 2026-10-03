@@ -104,7 +104,7 @@ Motion and effects: animation libraries, micro-interactions, CSS tricks.
 | 23 | [Liquid Glass](https://glass.samasante.com) | Dynamic glass refraction effects React components |
 | 24 | [MicroKit UI](https://microkit.co) | Top micro-interactions for buttons and inputs |
 | 25 | [CSS Text Effects](https://text-effects.colorion.co) | Copyable animated text effects |
-| 26 | [Circle Loaders](https://circleloaders.dominikakiss.com) | 24 modern SVG circular loaders |
+| 26 | [Circle Loaders](https://circleloaders.dominikakissi.com) | 24 modern SVG circular loaders |
 | 27 | [Gradient Buttons](https://gradientbuttons.colorion.co) | One-click copyable CSS gradient buttons |
 | 30 | [Anime.js](https://animejs.com) | Lightweight JS library for complex DOM animation |
 
@@ -145,7 +145,7 @@ Finishing touches: illustrations, icons and 3D assets.
 
 ## About the preview images
 
-Previews are each site's public social-share (Open Graph) image; copyright belongs to the respective authors and they are shown here only as previews. Motion Primitives publishes a broken share image (it points to localhost), so its preview is a screenshot of the homepage; Circle Loaders no longer resolves, so it uses a placeholder. If you have any concern, open an issue and it will be removed right away.
+Previews are each site's public social-share (Open Graph) image; copyright belongs to the respective authors and they are shown here only as previews. Motion Primitives publishes a broken share image (it points to localhost), so its preview is a screenshot of the homepage. If you have any concern, open an issue and it will be removed right away.
 
 ## License
 
