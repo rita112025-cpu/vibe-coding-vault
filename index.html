@@ -193,8 +193,8 @@ body[data-lang="both"] .more .en{display:none}
       <p class="lede">免費、開源與可試用的資源，一卷收盡。<br>搭站、動效、靈感，擇其所需，隨手取用。</p>
       <div class="stats">
         <div><strong id="total">0</strong>資源</div>
-        <div><strong>5</strong>分卷</div>
-        <div><strong>100%</strong>免費</div>
+        <div><strong id="cats">5</strong>分類</div>
+        <div><strong>$0</strong>起用成本</div>
       </div>
       <label class="search"><span>尋 檢</span><input id="q" type="search" placeholder="名稱、說明、關鍵字…" autocomplete="off"></label>
       <div class="chips" id="chips"></div>
@@ -308,7 +308,7 @@ CH.forEach(function(c,i){
   s.appendChild(r);host.appendChild(s)});
 navItem("s6","跋",NUM[6]);
 paint($("#paint-hero"),11,600,700);
-$("#total").textContent=DATA.length;
+$("#total").textContent=DATA.length;$("#cats").textContent=CH.length;
 
 /* 搜尋 / 篩選 */
 var q=$("#q"),cat="";
