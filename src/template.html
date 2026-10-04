@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>氛圍寶庫 · 紙上資源檔案館</title>
-<meta name="description" content="30 個免費開源的開發與設計資源，中英對照，宣紙水墨風格，支援亮色／暗色切換。">
+<meta name="description" content="精選免費、開源與可免費試用的開發與設計資源，中英對照，宣紙水墨風格，支援亮色／暗色切換。">
 <script>try{var t=localStorage.getItem("journal-theme");if(t==="dim"||(t!=="light"&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.dataset.journalTheme="dim"}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -109,6 +109,8 @@ h1,h2{font-weight:400;letter-spacing:.2em;line-height:1.25}
 :root[data-journal-theme="dim"] .shot img{filter:saturate(.7) sepia(.1) brightness(.85)}
 .shot:hover img{filter:none;transform:scale(1.03)}
 .shot .nm{position:absolute;left:12px;bottom:8px;font-size:12px;letter-spacing:.2em;color:var(--muted)}
+.tag{font-size:11px;letter-spacing:.14em;color:var(--muted);border:1px solid var(--line);padding:0 8px;line-height:1.7;white-space:nowrap}
+body[data-lang="zh"] .tag .en,body[data-lang="both"] .tag .en,body[data-lang="en"] .tag .zh{display:none}
 .more{display:inline-block;margin-top:16px;font-size:13px;letter-spacing:.3em;color:var(--red);padding-bottom:5px;border-bottom:1px solid var(--red);transition:letter-spacing .4s}
 .more:hover{letter-spacing:.42em}
 .more .en{letter-spacing:.2em;text-transform:uppercase;font-size:12px}
@@ -188,9 +190,9 @@ body[data-lang="both"] .more .en{display:none}
       <div class="sec-no">壹 · 入卷</div>
       <h1>氛圍<br>編程寶庫</h1>
       <div class="rule"></div>
-      <p class="lede">三十則免費開源資源，一卷收盡。<br>搭站、動效、靈感，擇其所需，隨手取用。</p>
+      <p class="lede">免費、開源與可試用的資源，一卷收盡。<br>搭站、動效、靈感，擇其所需，隨手取用。</p>
       <div class="stats">
-        <div><strong id="total">30</strong>資源</div>
+        <div><strong id="total">0</strong>資源</div>
         <div><strong>5</strong>分卷</div>
         <div><strong>100%</strong>免費</div>
       </div>
@@ -229,6 +231,7 @@ var CH=[
  {key:"Inspiration Galleries",zh:"靈感圖庫",nav:"圖庫",blurb:"眼要先見過。先逛一圈，再動手。",tone:"g"},
  {key:"Illustrations & 3D",zh:"插圖與立體",nav:"插圖",blurb:"點睛之處。圖標與立體素材，補上最後一筆。",tone:"r"}
 ];
+var TAG={"Open Source":"開源","Free":"免費","Freemium":"部分免費"};
 var NUM=["壹","貳","參","肆","伍","陸","柒"];
 var $=function(s,r){return(r||document).querySelector(s)};
 var el=function(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
@@ -289,6 +292,7 @@ CH.forEach(function(c,i){
     m.appendChild(el("span","idx",String(n+1).padStart(2,"0")));
     m.appendChild(el("span","badge",d.name.charAt(0).toUpperCase()));
     m.appendChild(el("span","host",d.url.replace(/^https?:\/\//,"")));
+    if(d.tag&&TAG[d.tag]){var tg=el("span","tag");tg.title=d.tag;tg.appendChild(el("span","zh",TAG[d.tag]));tg.appendChild(el("span","en",d.tag));m.appendChild(tg)}
     var bd=el("div","body"),h=el("h3"),a=el("a",null,d.name);
     a.href=d.url;a.target="_blank";a.rel="noopener noreferrer";h.appendChild(a);
     bd.appendChild(h);bd.appendChild(el("p","zh",d.zh));bd.appendChild(el("p","en",d.en));
@@ -304,6 +308,7 @@ CH.forEach(function(c,i){
   s.appendChild(r);host.appendChild(s)});
 navItem("s6","跋",NUM[6]);
 paint($("#paint-hero"),11,600,700);
+$("#total").textContent=DATA.length;
 
 /* 搜尋 / 篩選 */
 var q=$("#q"),cat="";

@@ -268,5 +268,185 @@
     "zh": "輕量級 JS 函式庫，處理複雜 DOM 動畫",
     "en": "Lightweight JS library for complex DOM animation",
     "image": "assets/previews/30.webp"
+  },
+  {
+    "id": 31,
+    "name": "DaisyUI",
+    "url": "https://daisyui.com",
+    "category": "Core Components",
+    "zh": "Tailwind CSS 元件庫，語意化 class 與內建主題，少寫 class 也能快速搭 UI",
+    "en": "Tailwind CSS component library with semantic class names and built-in themes",
+    "tag": "Open Source",
+    "image": "assets/previews/31.webp"
+  },
+  {
+    "id": 32,
+    "name": "Tremor",
+    "url": "https://www.tremor.so",
+    "category": "Core Components",
+    "zh": "開源、無障礙的 React 元件，以 Tailwind 打造圖表與儀表板",
+    "en": "Open-source, accessible React components styled with Tailwind for charts and dashboards",
+    "tag": "Open Source",
+    "image": "assets/previews/32.webp"
+  },
+  {
+    "id": 33,
+    "name": "DevSnips",
+    "url": "https://devsnips.site",
+    "category": "Core Components",
+    "zh": "開源 UI 註冊庫，提供 React / Tailwind / Vanilla 的元件、區塊與完整模板",
+    "en": "Open-source UI registry of components, sections and templates for React, Tailwind and Vanilla",
+    "tag": "Open Source",
+    "image": "assets/previews/33.webp"
+  },
+  {
+    "id": 34,
+    "name": "Park UI",
+    "url": "https://park-ui.com",
+    "category": "Core Components",
+    "zh": "以 Ark UI 與 Panda CSS 打造的精緻元件，支援多種前端框架",
+    "en": "Beautifully designed components built on Ark UI and Panda CSS, working across JS frameworks",
+    "tag": "Open Source",
+    "image": "assets/previews/34.webp"
+  },
+  {
+    "id": 35,
+    "name": "Origin UI",
+    "url": "https://originui.com",
+    "category": "Core Components",
+    "zh": "現已更名為 coss ui：基於 Base UI 的現代元件庫，收錄 500+ 個元件範例",
+    "en": "Now rebranded as coss ui: a modern component library built on Base UI with 500+ examples",
+    "tag": "Open Source",
+    "image": "assets/previews/35.webp"
+  },
+  {
+    "id": 36,
+    "name": "Motion",
+    "url": "https://motion.dev",
+    "category": "Animation & Effects",
+    "zh": "原 Framer Motion，適用 React、JavaScript 與 Vue 的高效能動畫庫",
+    "en": "Formerly Framer Motion: a fast, production-grade animation library for React, JavaScript and Vue",
+    "tag": "Open Source",
+    "image": "assets/previews/36.webp"
+  },
+  {
+    "id": 37,
+    "name": "GSAP",
+    "url": "https://gsap.com",
+    "category": "Animation & Effects",
+    "zh": "專業級的強大 JavaScript 動畫庫，萬物皆可動畫，由 Webflow 支持",
+    "en": "A wildly robust JavaScript animation library built for professionals, supported by Webflow",
+    "tag": "Free",
+    "image": "assets/previews/37.webp"
+  },
+  {
+    "id": 38,
+    "name": "Lenis",
+    "url": "https://lenis.darkroom.engineering",
+    "category": "Animation & Effects",
+    "zh": "輕量、高效能且兼顧無障礙的平滑捲動函式庫",
+    "en": "Lightweight, performant and accessible smooth-scroll library",
+    "tag": "Open Source",
+    "image": "assets/previews/38.webp"
+  },
+  {
+    "id": 39,
+    "name": "AutoAnimate",
+    "url": "https://auto-animate.formkit.com",
+    "category": "Animation & Effects",
+    "zh": "零設定、即插即用，自動為網頁元素加上平滑過場動畫",
+    "en": "Zero-config, drop-in utility that automatically adds smooth transitions to your app",
+    "tag": "Open Source",
+    "image": "assets/previews/39.webp"
+  },
+  {
+    "id": 40,
+    "name": "LottieFiles",
+    "url": "https://lottiefiles.com",
+    "category": "Animation & Effects",
+    "zh": "Lottie 動畫平台，提供大量可直接使用的動畫與編輯工具",
+    "en": "Lottie animation platform with a huge library of ready-to-use animations and tools",
+    "tag": "Freemium",
+    "image": null
+  },
+  {
+    "id": 41,
+    "name": "v0.dev",
+    "url": "https://v0.dev",
+    "category": "Vibe Coding AI",
+    "zh": "Vercel 的 AI 助手：用對話設計、迭代並擴展全端網頁應用",
+    "en": "Vercel's AI assistant to design, iterate and scale full-stack web applications",
+    "tag": "Freemium",
+    "image": "assets/previews/41.webp"
+  },
+  {
+    "id": 42,
+    "name": "Kombai Gallery",
+    "url": "https://kombai.com/gallery",
+    "category": "Vibe Coding AI",
+    "zh": "持續增長的網頁與行動 UI 設計庫，挑一個用 Kombai 重混或直接帶回專案",
+    "en": "A growing library of web and mobile UI designs to remix with Kombai or take to your stack",
+    "tag": "Free",
+    "image": "assets/previews/42.webp"
+  },
+  {
+    "id": 43,
+    "name": "Google Stitch",
+    "url": "https://stitch.withgoogle.com",
+    "category": "Vibe Coding AI",
+    "zh": "Google 的 AI 介面設計工具，快速生成行動與網頁 UI",
+    "en": "Google's AI UI design tool that turns ideas into mobile and web interfaces fast",
+    "tag": "Free",
+    "image": "assets/previews/43.webp"
+  },
+  {
+    "id": 44,
+    "name": "Relume",
+    "url": "https://www.relume.io",
+    "category": "Vibe Coding AI",
+    "zh": "以逾 200 萬個網站採用的人工設計元件系統為基礎，可在 Relume 發布或匯出",
+    "en": "Build from the human-made component system behind 2M+ websites; publish in Relume or export",
+    "tag": "Freemium",
+    "image": "assets/previews/44.webp"
+  },
+  {
+    "id": 45,
+    "name": "Mobbin",
+    "url": "https://mobbin.com",
+    "category": "Inspiration Galleries",
+    "zh": "40 萬+ 可搜尋的行動與網頁 App 截圖庫，省下 UI/UX 研究時間",
+    "en": "400,000+ searchable mobile and web app screenshots for UI/UX research",
+    "tag": "Freemium",
+    "image": "assets/previews/45.webp"
+  },
+  {
+    "id": 46,
+    "name": "Landingfolio",
+    "url": "https://www.landingfolio.com",
+    "category": "Inspiration Galleries",
+    "zh": "精選 Landing Page 設計、模板與元件的靈感庫",
+    "en": "The best landing page designs, templates and components for inspiration",
+    "tag": "Free",
+    "image": "assets/previews/46.webp"
+  },
+  {
+    "id": 47,
+    "name": "unDraw",
+    "url": "https://undraw.co",
+    "category": "Illustrations & 3D",
+    "zh": "開源免費插圖庫，可自訂主色，適用網站與產品",
+    "en": "Open-source illustrations with a customizable accent colour for sites and products",
+    "tag": "Free",
+    "image": "assets/previews/47.webp"
+  },
+  {
+    "id": 48,
+    "name": "Storyset",
+    "url": "https://storyset.com",
+    "category": "Illustrations & 3D",
+    "zh": "可客製、可動畫化的免費插圖，適合 Landing Page、App 與簡報",
+    "en": "Free customizable, animatable illustrations for landing pages, apps and presentations",
+    "tag": "Freemium",
+    "image": "assets/previews/48.webp"
   }
 ]
