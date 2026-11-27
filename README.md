@@ -68,7 +68,7 @@ python build.py
 
 4. 開啟 `index.html` 確認結果。
 
-> 分類目前固定為 5 類（見 `src/template.html` 內的 `CH` 陣列）。要新增分類，請同步修改該陣列。
+> 分類與授權標籤只在 `build.py` 開頭的 `CATEGORIES`、`TAGS` 定義，建置時會注入頁面與 README。要新增分類，在 `CATEGORIES` 加一筆即可；資料裡出現未定義的分類或標籤時，建置會直接報錯。
 
 ## 部署到 GitHub Pages
 

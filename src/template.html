@@ -22,7 +22,7 @@
 <script>try{var t=localStorage.getItem("journal-theme");if(t==="dim"||(t!=="light"&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.dataset.journalTheme="dim"}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#f1e9d8;--bg2:#eae0ca;--ink:#2a2620;--muted:#585044;--faint:#71665a;
@@ -233,7 +233,7 @@ body[data-lang="both"] .more .en{display:none}
   <div id="chapters"></div>
   <div class="empty" id="empty">山中無此物，換個詞再尋。</div>
 
-  <section id="s6" class="end">
+  <section id="end" class="end">
     <i class="corner c1"></i><i class="corner c2"></i><i class="corner c3"></i><i class="corner c4"></i>
     <div class="circle">
       <div class="ghost2" aria-hidden="true">庫</div>
@@ -248,18 +248,14 @@ body[data-lang="both"] .more .en{display:none}
 </main>
 
 <script id="data" type="application/json">__DATA__</script>
+<script id="config" type="application/json">__CONFIG__</script>
 <script>
 (function(){
 var DATA=JSON.parse(document.getElementById("data").textContent);
-var CH=[
- {key:"Core Components",zh:"核心元件",nav:"元件",blurb:"骨架先立。元件庫是起手式，擇一而深用之。",tone:"g"},
- {key:"Animation & Effects",zh:"動畫特效",nav:"動效",blurb:"皮肉見神。一點動勢，便有生氣。",tone:"r"},
- {key:"Vibe Coding AI",zh:"氛圍編程 AI",nav:"助筆",blurb:"以言語作畫。提示、規範與風格，交給機器落筆。",tone:"i"},
- {key:"Inspiration Galleries",zh:"靈感圖庫",nav:"圖庫",blurb:"眼要先見過。先逛一圈，再動手。",tone:"g"},
- {key:"Illustrations & 3D",zh:"插圖與立體",nav:"插圖",blurb:"點睛之處。圖標與立體素材，補上最後一筆。",tone:"r"}
-];
-var TAG={"Open Source":"開源","Free":"免費","Freemium":"部分免費"};
-var NUM=["壹","貳","參","肆","伍","陸","柒"];
+/* 分類與標籤由 build.py 注入，請勿在此修改 */
+var CONFIG=JSON.parse(document.getElementById("config").textContent);
+var CH=CONFIG.categories,TAG=CONFIG.tags;
+var NUM=["壹","貳","參","肆","伍","陸","柒","捌","玖","拾","拾壹","拾貳"];
 var $=function(s,r){return(r||document).querySelector(s)};
 var el=function(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
 
@@ -333,7 +329,7 @@ CH.forEach(function(c,i){
     more.appendChild(el("span","zh","前往訪問"));more.appendChild(el("span","en","Visit"));
     bd.appendChild(more);row.appendChild(m);row.appendChild(bd);r.appendChild(row)});
   s.appendChild(r);host.appendChild(s)});
-navItem("s6","跋",NUM[6]);
+navItem("end","跋",NUM[CH.length+1]);
 paint($("#paint-hero"),11,600,700);
 $("#total").textContent=DATA.length;$("#cats").textContent=CH.length;
 

@@ -68,7 +68,7 @@ python build.py
 
 4. Open `index.html` to check.
 
-> There are five fixed categories (the `CH` array in `src/template.html`). Edit that array to add a new one.
+> Categories and licence tags are defined only in `CATEGORIES` and `TAGS` at the top of `build.py`, and are injected into the page and READMEs at build time. To add a category, add one entry to `CATEGORIES`; the build fails loudly if the data uses an undefined category or tag.
 
 ## Deploy to GitHub Pages
 
