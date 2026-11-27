@@ -5,20 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>氛圍寶庫 · 紙上資源檔案館</title>
 <meta name="description" content="精選免費、開源與可免費試用的開發與設計資源，中英對照，宣紙水墨風格，支援亮色／暗色切換。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="氛圍寶庫">
+<meta property="og:title" content="氛圍寶庫 · 紙上資源檔案館">
+<meta property="og:description" content="精選免費、開源與可免費試用的開發與設計資源，中英對照，一卷收盡。">
+<meta property="og:url" content="https://rita112025-cpu.github.io/vibe-coding-vault/">
+<meta property="og:image" content="https://rita112025-cpu.github.io/vibe-coding-vault/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="氛圍寶庫 · 紙上資源檔案館">
+<meta name="twitter:description" content="精選免費、開源與可免費試用的開發與設計資源，中英對照，一卷收盡。">
+<meta name="twitter:image" content="https://rita112025-cpu.github.io/vibe-coding-vault/assets/og.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='6' fill='%23f1e9d8' stroke='%23b23a2b' stroke-width='4'/%3E%3Ctext x='32' y='45' font-size='36' text-anchor='middle' fill='%23b23a2b' font-family='serif'%3E%E5%BA%AB%3C/text%3E%3C/svg%3E">
 <script>try{var t=localStorage.getItem("journal-theme");if(t==="dim"||(t!=="light"&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.dataset.journalTheme="dim"}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f1e9d8;--bg2:#eae0ca;--ink:#2a2620;--muted:#585044;--faint:#a89d8a;
+  --bg:#f1e9d8;--bg2:#eae0ca;--ink:#2a2620;--muted:#585044;--faint:#71665a;
   --line:rgba(60,48,30,.18);--red:#b23a2b;--green:#62785f;--mist:#f1e9d8;--grain:.5;
   --serif:"Noto Serif TC","Songti TC","Source Han Serif TC","PMingLiU",serif;
   --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
   --rail:120px;color-scheme:light;
 }
 :root[data-journal-theme="dim"]{
-  --bg:#17150f;--bg2:#1e1b14;--ink:#e9e0cd;--muted:#b4aa96;--faint:#6a6254;
+  --bg:#17150f;--bg2:#1e1b14;--ink:#e9e0cd;--muted:#b4aa96;--faint:#8e8472;
   --line:rgba(233,224,205,.14);--red:#e0674f;--green:#94aa8e;--mist:#17150f;--grain:.25;
   color-scheme:dark;
 }
@@ -49,6 +63,19 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .ctrl button{writing-mode:vertical-rl;text-orientation:upright;font-size:11px;letter-spacing:.15em;color:var(--muted);
   border:1px solid var(--line);padding:8px 5px;transition:all .3s}
 .ctrl button:hover{color:var(--red);border-color:var(--red)}
+@media (min-width:1001px){
+  .brand,.vol,.nav,.ctrl{flex-shrink:0}
+  .rail{overflow-y:auto;scrollbar-width:none}
+}
+@media (min-width:1001px) and (max-height:720px){
+  .rail{padding:20px 0 12px}
+  .brand{font-size:18px}
+  .vol{margin-top:8px}
+  .track{margin:12px 0}
+  .nav{gap:10px}
+  .ctrl{margin-top:12px;gap:6px}
+  .ctrl button{padding:5px 4px}
+}
 .when-dim{display:none}
 :root[data-journal-theme="dim"] .when-dim{display:inline}
 :root[data-journal-theme="dim"] .when-light{display:none}
@@ -287,7 +314,7 @@ CH.forEach(function(c,i){
   var r=el("div","ch-r");
   items.forEach(function(d,n){
     var row=el("article","row rv tone-"+c.tone);
-    row.dataset.hay=(d.name+" "+d.zh+" "+d.en+" "+c.zh+" "+c.key).toLowerCase();
+    row.dataset.hay=[d.name,d.zh,d.en,c.zh,c.key,d.url,d.tag||"",TAG[d.tag]||""].join(" ").toLowerCase();
     var m=el("div","meta");
     m.appendChild(el("span","idx",String(n+1).padStart(2,"0")));
     m.appendChild(el("span","badge",d.name.charAt(0).toUpperCase()));
